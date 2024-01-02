@@ -15,6 +15,8 @@
 		CF2601B72B41D26B0080E574 /* SwiftCircuitCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2601B62B41D26B0080E574 /* SwiftCircuitCounterPresenter.swift */; };
 		CF2601B92B41D2DF0080E574 /* Koin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2601B82B41D2DF0080E574 /* Koin.swift */; };
 		CF7ABE8F2B43288B00F53359 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ABE8E2B43288B00F53359 /* AppDelegate.swift */; };
+		CF7ABE912B447EAD00F53359 /* SwiftCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ABE902B447EAD00F53359 /* SwiftCounterPresenter.swift */; };
+		CF7ABE932B447EE100F53359 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7ABE922B447EE100F53359 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		CF2601B62B41D26B0080E574 /* SwiftCircuitCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCircuitCounterPresenter.swift; sourceTree = "<group>"; };
 		CF2601B82B41D2DF0080E574 /* Koin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Koin.swift; sourceTree = "<group>"; };
 		CF7ABE8E2B43288B00F53359 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF7ABE902B447EAD00F53359 /* SwiftCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCounterPresenter.swift; sourceTree = "<group>"; };
+		CF7ABE922B447EE100F53359 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -93,6 +97,8 @@
 			children = (
 				CF2601B42B41D24E0080E574 /* CircuitCounterView.swift */,
 				CF2601B62B41D26B0080E574 /* SwiftCircuitCounterPresenter.swift */,
+				CF7ABE902B447EAD00F53359 /* SwiftCounterPresenter.swift */,
+				CF7ABE922B447EE100F53359 /* CounterView.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -192,8 +198,10 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				CF2601B92B41D2DF0080E574 /* Koin.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				CF7ABE912B447EAD00F53359 /* SwiftCounterPresenter.swift in Sources */,
 				CF2601B52B41D24E0080E574 /* CircuitCounterView.swift in Sources */,
 				CF2601B72B41D26B0080E574 /* SwiftCircuitCounterPresenter.swift in Sources */,
+				CF7ABE932B447EE100F53359 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

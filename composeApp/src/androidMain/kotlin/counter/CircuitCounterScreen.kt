@@ -3,8 +3,8 @@ package counter
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Button
@@ -24,9 +24,14 @@ fun CircuitCounter(state: CircuitCounterScreen.State, modifier: Modifier = Modif
     Box(modifier = modifier) { // Apply the passed modifier to the root Box
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
+                text = "Circuit",
+                style = MaterialTheme.typography.displayMedium,
+                modifier = Modifier.padding(bottom = 8.dp),
+            )
+            Text(
                 modifier = Modifier.align(Alignment.CenterHorizontally),
                 text = "Circuit: ${state.count}",
-                style = MaterialTheme.typography.displayLarge,
+                style = MaterialTheme.typography.displayMedium,
                 color = color,
             )
             Spacer(modifier = Modifier.height(16.dp))

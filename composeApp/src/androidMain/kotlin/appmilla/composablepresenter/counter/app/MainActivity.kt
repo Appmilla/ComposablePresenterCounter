@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                     Column(
                         Modifier
                             .align(Alignment.Center)
-                            .padding(32.dp) // Add padding around the entire column for better spacing from edges.
+                            .padding(32.dp), // Add padding around the entire column for better spacing from edges.
                     ) {
                         val circuitCounterState by counterViewModel.circuitCounterPresenter.collectAsState()
                         CircuitCounter(circuitCounterState)
