@@ -19,7 +19,7 @@ import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Counter(state: CounterScreen.State, modifier: Modifier = Modifier) {
+fun CircuitCounter(state: CircuitCounterScreen.State, modifier: Modifier = Modifier) {
     val color = if (state.count >= 0) Color.Unspecified else MaterialTheme.colorScheme.error
     Box(modifier.fillMaxSize()) {
         Column(Modifier.align(Alignment.Center)) {
@@ -27,18 +27,18 @@ fun Counter(state: CounterScreen.State, modifier: Modifier = Modifier) {
                 modifier = Modifier.align(Alignment.CenterHorizontally),
                 text = "Count: ${state.count}",
                 style = MaterialTheme.typography.displayLarge,
-                color = color
+                color = color,
             )
             Spacer(modifier = Modifier.height(16.dp))
             Button(
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = { state.eventSink(CounterScreen.Event.Increment) }
+                onClick = { state.eventSink(CircuitCounterScreen.CounterEvent.Increment) },
             ) {
                 Icon(rememberVectorPainter(Icons.Filled.Add), "Increment")
             }
             Button(
                 modifier = Modifier.align(Alignment.CenterHorizontally),
-                onClick = { state.eventSink(CounterScreen.Event.Decrement) }
+                onClick = { state.eventSink(CircuitCounterScreen.CounterEvent.Decrement) },
             ) {
                 Icon(rememberVectorPainter(Remove), "Decrement")
             }

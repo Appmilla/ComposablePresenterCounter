@@ -1,3 +1,5 @@
+// Copyright (C) 2023 Slack Technologies, LLC
+// SPDX-License-Identifier: Apache-2.0
 package core
 
 import androidx.compose.runtime.Immutable
@@ -15,4 +17,4 @@ import androidx.compose.runtime.Immutable
  *
  * To test events flowing from a UI, consider using `TestEventSink` from Circuit's test artifact.
  */
-@Immutable public interface UiEvent
+@Immutable public interface CircuitUiEvent

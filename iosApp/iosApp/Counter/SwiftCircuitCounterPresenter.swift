@@ -1,16 +1,16 @@
 import Foundation
 import Shared
 
-class SwiftCounterPresenter: ObservableObject {
+class SwiftCircuitCounterPresenter: ObservableObject {
     
     var viewModel: CounterViewModel = KotlinDependencies.shared.getCounterViewModel()
     
     @Published
-    private(set) var state: CounterScreenState? = nil
+    private(set) var state: CircuitCounterScreenState? = nil
 
     @MainActor
     func activate() async {
-        for await state in viewModel.counterPresenter {
+        for await state in viewModel.circuitCounterPresenter {
            
             self.state = state
         }

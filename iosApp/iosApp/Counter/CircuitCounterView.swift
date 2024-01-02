@@ -2,10 +2,10 @@ import Foundation
 import SwiftUI
 import Shared
 
-struct CounterView: View {
+struct CircuitCounterView: View {
     
     @ObservedObject
-    var presenter = SwiftCounterPresenter()
+    var presenter = SwiftCircuitCounterPresenter()
 
     var body: some View {
         NavigationView {
@@ -14,7 +14,7 @@ struct CounterView: View {
                     .font(.system(size: 36))
                 HStack(spacing: 10) {
                     Button(action: {
-                        presenter.state?.eventSink(CounterScreenEventDecrement.shared)
+                        presenter.state?.eventSink(CircuitCounterScreenCounterEventDecrement.shared)
                     }) {
                         Text("-")
                             .font(.system(size: 36, weight: .black, design: .monospaced))
@@ -23,7 +23,7 @@ struct CounterView: View {
                         .foregroundColor(.white)
                         .background(Color.blue)
                     Button(action: {
-                        presenter.state?.eventSink(CounterScreenEventIncrement.shared)
+                        presenter.state?.eventSink(CircuitCounterScreenCounterEventIncrement.shared)
                     }) {
                         Text("+")
                             .font(.system(size: 36, weight: .black, design: .monospaced))

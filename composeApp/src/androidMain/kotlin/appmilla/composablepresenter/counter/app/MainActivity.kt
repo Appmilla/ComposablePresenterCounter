@@ -7,9 +7,10 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.Preview
-import counter.Counter
-import counter.CounterScreen
+import counter.CircuitCounter
+import counter.CircuitCounterScreen
 import counter.CounterViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -21,8 +22,8 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MaterialTheme {
-                val counterState by counterViewModel.counterPresenter.collectAsState()
-                Counter(counterState)
+                val counterState by counterViewModel.circuitCounterPresenter.collectAsState()
+                CircuitCounter(counterState)
             }
         }
     }
@@ -31,5 +32,5 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    Counter(CounterScreen.State(0))
+    CircuitCounter(CircuitCounterScreen.State(0))
 }

@@ -1,3 +1,5 @@
+// Copyright (C) 2023 Slack Technologies, LLC
+// SPDX-License-Identifier: Apache-2.0
 package core
 
 import androidx.compose.runtime.Stable
@@ -15,4 +17,4 @@ import androidx.compose.runtime.Stable
  *
  * **Circuit state types are annotated as [@Stable][Stable] and should only use stable properties.**
  */
-@Stable public interface UiState
+@Stable public interface CircuitUiState

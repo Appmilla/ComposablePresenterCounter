@@ -5,7 +5,7 @@ import app.cash.molecule.launchMolecule
 import viewmodels.MoleculeViewModel
 
 class CounterViewModel : MoleculeViewModel() {
-    val counterPresenter = moleculeScope.launchMolecule(mode = RecompositionMode.ContextClock) {
-        CounterPresenter()
+    val circuitCounterPresenter = moleculeScope.launchMolecule(mode = RecompositionMode.ContextClock) {
+        CircuitCounterPresenter()
     }
 }
