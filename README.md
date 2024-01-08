@@ -1,7 +1,7 @@
 # ComposablePresenterCounter
 A Composable Presenter counter example using Molecule &amp; SKIE to explore using a UDF like Slack's Circuit with native views rather than Compose Multiplatform.
 
-There is a (blog article)[https://appmilla.com/latest/experimenting-with-composable-presenters-in-kotlin-multiplatform/] to accompany the code.
+There is a [blog article](https://appmilla.com/latest/experimenting-with-composable-presenters-in-kotlin-multiplatform/) to accompany the code.
 
 A Kotlin Multiplatform app for iOS and Android targets with SwiftUI and Jetpack Compose native views.
 
